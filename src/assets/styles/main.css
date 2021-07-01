@@ -1,0 +1,80 @@
+html, body, #app {
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --theme-header-color: #ec4141;
+  --theme-header-text-color: white;
+  --theme-footer-color: white;
+  --theme-main-color: #ec4141;
+  --theme-bg-color: white;
+  --theme-text-color: #000000;
+}
+
+#app {
+  min-width: 1000px;
+  min-height: 672px;
+  color: var(--theme-text-color);
+  background-color: var(--theme-bg-color);
+}
+
+.theme-text {
+  color: var(--theme-text-color);
+}
+
+.theme-header {
+  color: var(--theme-header-text-color);
+  background-color: var(--theme-header-color);
+}
+
+.theme-footer {
+  background-color: var(--theme-footer-color);
+}
+
+.theme-bg {
+  background-color: var(--theme-bg-color);
+}
+
+.theme-bg-main {
+  background-color: var(--theme-main-color);
+}
+
+.theme {
+  color: var(--theme-text-color);
+  background-color: var(--theme-bg-color);
+}
+
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  visibility: hidden;
+  background: rgba(224, 224, 224, 1);
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  border-radius: 5px;
+  background: var(--theme-bg-color);
+}
+
+.dark .border {
+  border-color: #444444;
+}
+
+.scroll:hover::-webkit-scrollbar-thumb {
+  visibility: visible
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  background: rgb(75, 75, 75);
+}
