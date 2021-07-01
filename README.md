@@ -1,5 +1,7 @@
 # netease-cloud-music
 
+效果演示： http://118.24.72.153/netease-cloud-music
+
 ## Project setup
 ```
 npm install
